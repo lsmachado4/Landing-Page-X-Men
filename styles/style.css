@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(34, 34, 34);
+    /*cores do fundo*/
+    color: white;
+    /*cores das letras  e como está em no corpo, todas as cores irão mudar*/
+    font-family: poppinsregular;
+    /*Essa fonte está sendo utilizada de outro arquivo "fonts.css" */
+    max-width: 1200px;
+    /* Serve para redimencionar a tela em diferentes ZOOMS*/
+    margin: 0 auto;
+    /*centralizando*/
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    /*método de estilização para posicionar os flexbox*/
+    flex-direction: row;
+    /* Deixa a organização em linha*/
+    justify-content: space-between;
+    /*Abre um espaço entre as bordas do cabeçalho*/
+    align-items: center;
+    /*Alinhamento*/
+}
+
+#title {
+    flex-direction: column;
+    /*Coluna fixa*/
+    line-height: 10px;
+    /*Reduzir os espaços entre os letreiros*/
+}
+
+li {
+    /*Elementos da lista*/
+    display: inline-block;
+    /*Faz que as os item (sobre, início, serviços) fiquem horizontalizados */
+    margin: 20px;
+}
+
+a {
+    /*Alterando as cores dos items*/
+    color: white;
+}
+
+a:hover {
+    /*Efeito para alterar cores quando o mouse passar por cima dos ítens */
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+    /*Alterando o tempo de resposta do efeito*/
+}
+
+#Inscreva-se-button {
+    border: 2px solid rgb(132, 14, 201);
+    /*tipo de borda*/
+    padding: 10px;
+    /*Margin interna da borda*/
+    border-radius: 15px;
+    /*Deixando a borda arredondada*/
+
+}
+
+#Inscreva-se-button:hover {
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+main {
+    display: flex;
+    /*Cria divisória da imagem entre direita e esquerda*/
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+
+}
+
+span {
+    /* span para alterar a cor da parte específica */
+    color: rgb(132, 14, 201)
+}
+
+p {
+    /*Personalizando o parágrafo*/
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+
+}
+
+img {
+    width: 676px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"] {
+    /*fazer alteração pontualizada: chamada para mudança*/
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+
+}
